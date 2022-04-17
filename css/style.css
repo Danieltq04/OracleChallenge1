@@ -16,19 +16,7 @@ main>*{
     width: 50px;
 }
 #munieco{
-    width: 100%;
     display: none;
-}
-li{
-    list-style: none;
-}
-.enlace{
-    padding: 5px;
-}
-.imagen{
-    width: 100px;
-    height: 50px;
-    background-color: lightblue;
 }
 header, footer{
     display: flex;
@@ -63,7 +51,6 @@ aside{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
     padding-top: 20px;
 }
 h1{
@@ -126,8 +113,6 @@ button{
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    text-align: center;
     padding-top: 20px;
 }
 #texto-encriptado{
