@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main>*{
+    padding: 10px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#logo{
+    width: 50px;
+}
+#munieco{
+    width: 100%;
+    display: none;
+}
+li{
+    list-style: none;
+}
+.enlace{
+    padding: 5px;
+}
+.imagen{
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+}
+header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: lightblue;
+}
+footer>p{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+main{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    min-height: 80vh;
+    background-color: rgb(214, 214, 214);
+}
+aside{
+    display: block;
+    margin: 0 auto;
+    background-color: #eee;
+    margin: 20px;
+    border-radius: 1em;
+}
+.texto-resaltado{
+    font-size: 1.3em;
+}
+.imagen-munieco{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+h1{
+    font-size: 28px;
+}
+.botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    align-self: center;
+    width: 70%;
+}
+button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 14px;
+    border: 1px solid #0A3871;
+}
+#encriptar{
+    background-color: #0A3871;
+    color: #eee;
+}
+#encriptar:hover{
+    background-color: #0e54aa;
+    color: #eee;
+}
+#desencriptar, #copiar{
+    background-color: rgb(216, 216, 216);
+    color: #0A3871;
+}
+#desencriptar:hover, #copiar:hover{
+    background-color: rgb(156, 156, 156);
+    color: #0A3871;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+#input-texto{
+    align-items: center;
+    padding: 10px;
+    height: 40px;
+    border-radius: .6rem;
+    width: 70%;
+    border: solid 1px gray;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-input-placeholder {
+    color: #0A3871;
+    font-style: italic;
+}
+.desencriptado{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+#texto-encriptado{
+    font-size: 20px;
+}
+
+
+
+/*Vista Tablets*/
+@media (min-width: 768px){
+    h1{
+        font-size: 30px;
+    }
+    main{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    aside{
+        display: block;
+    }
+    #munieco{
+        display: inline;
+    }
+    #input-texto{
+        font-size: 22px;
+    }
+    footer>p{
+        font-size: 2em;
+    }
+}
+/*Vista Computadoras*/
+@media (min-width: 1200px){
+    
+}
+
+
