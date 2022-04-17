@@ -7,7 +7,6 @@ let textoModificado = document.getElementById("texto-encriptado");
 let btnCopiar = document.getElementById("copiar");
 
 texto.addEventListener("keypress",(e)=>{
-    console.log(e.key)
     if(!e.key.match(/[a-z ]/)){
         e.preventDefault();
     }
