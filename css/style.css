@@ -59,14 +59,13 @@ aside{
     padding-top: 20px;
 }
 h1{
-    font-size: 28px;
+    font-size: 24px;
 }
 .botones{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     align-self: center;
-    width: 70%;
 }
 button{
     padding-top: 10px;
@@ -125,7 +124,6 @@ button{
     font-size: 20px;
 }
 
-
 /*Vista Tablets*/
 @media (min-width: 768px){
     h1{
@@ -151,4 +149,20 @@ button{
 /*Vista Computadoras*/
 @media (min-width: 1200px){
     
+}
+
+.icon-text{
+    display: flex;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+#img-vector{
+    width: 19px;
+    height: 15px;
+    padding-right: 5px;
+}
+.conteiner-down{
+    width: 70%;
+    margin: 0 auto;
 }
